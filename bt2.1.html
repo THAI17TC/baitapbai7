@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+function timKiemChanLe(mang) {
+    var sochan = [];
+    var sole = [];
+    if (mang.length > 0) {
+      for (var index = 0; index < mang.length; index++) {
+        var so = mang[index];
+        if (so % 2 == 0) {
+          sochan.push(so);
+        } else {
+          sole.push(so);
+        }
+      }
+      console.log('Tổng số chẵn tìm thấy là:'+sochan.length);
+      console.log('Tổng số lẽ tìm thấy là:'+ sole.length);
+    } 
+    else {
+      console.log('Mảng rỗng');
+      return false;
+    }
+  }
+   var mang = [1, 2, 3, 4, 6, 6, 7, 4, 4, 7, 9, 77, 53, 23, 34];
+   timKiemChanLe(mang);
+
+
+  </script>  
+
+
+
+
+</body>
+</html>  
+
+
+
+
+
+
+
+
+
+
